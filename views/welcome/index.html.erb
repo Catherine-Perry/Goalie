@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<h1>Welcome to Goalie!</h1>
+	<h2>An app that helps you get your shit together</h2>
+	<p><%= link_to 'Choose your GOALS', goals_path(@goal) %></p>
+	<p><%= link_to 'Define your STEPS', steps_path(@step) %></p>
+	<p><%= link_to 'Form your HABITS', habits_path(@habit) %></p>
+	<p>Track your PROGRESS</p>
+	<p>CONTACT the developer</p>
+	<p>ABOUT this app and goals</p>
+
+
+<%= yield %>
+
+</body>
+</html>
